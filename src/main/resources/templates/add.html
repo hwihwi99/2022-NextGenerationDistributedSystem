@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=a, initial-scale=1.0">
+    <title>AddPage</title>
+</head>
+<body>
+    <h1>정보 입력 페이지입니다.</h1>
+
+    <form th:action="@{/new}" th:object="${data}" method="post">
+        <div>
+            <label for="writer">Enter your name: </label>
+            <input type="text" th:field="*{writer}" name="name" id="writer" required>
+        </div>
+        <div>
+            <label for="title">Enter your name: </label>
+            <input type="text" th:field="*{title}" name="name" id="title" required>
+        </div>
+        <div>
+            <label for="content">Enter your name: </label>
+            <input type="text" th:field="*{content}" name="name" id="content" required>
+        </div>
+        <div>
+            <button type="submit">제출</button>
+        </div>
+    </form>
+
+
+
+</body>
+</html>
