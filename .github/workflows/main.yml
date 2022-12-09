@@ -24,7 +24,7 @@ jobs:
           port: ${{ secrets.PORT }}
         script: |
           cd ..
-          cd /home/cleanremove/CleanRemoveServer
+          cd /home/cleanremove/CleanRemoveServer/2022-NextGenerationDistributedSystem
           echo "i'm working"
 
           git pull origin main
